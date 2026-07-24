@@ -1,1 +1,64 @@
-#
+type: custom:atess-power-flow-card
+title: Energy Flow
+subtitle: Grid rectifier · DC bus · Battery · HPS150
+site_name: LOAD
+image_version: "2"
+images:
+  rectifier: /local/atess-dashboard/rectifier.png
+  battery: /local/atess-dashboard/battery-rack.png
+  inverter: /local/atess-dashboard/hps150.png
+  load: /local/atess-dashboard/alutip-logo.png
+power_units:
+  grid: W
+  battery: kW
+  load: kW
+energy_units:
+  grid_daily: kWh
+  battery_charge: kWh
+  battery_discharge: kWh
+  load_daily: kWh
+temperature_unit: °C
+power_factor_scale: 1
+battery_positive_means: discharging
+deadband_w: 100
+show:
+  subtitle: true
+  grid_daily_energy: true
+  battery_soc_gauge: true
+  battery_voltage: true
+  battery_current: false
+  battery_temperature: false
+  inverter_phase_voltages: true
+  inverter_phase_currents: true
+  inverter_ac_temperature: true
+  inverter_dc_temperature: false
+  inverter_ambient_temperature: false
+  load_power_factor: false
+  load_daily_energy: true
+  energy_summary: true
+  summary_grid_import: true
+  summary_battery_charge: true
+  summary_battery_discharge: true
+  summary_load: true
+entities:
+  grid_power: null # eg. sensor.entity_id
+  grid_daily_energy: null
+  battery_power: null
+  battery_soc: null
+  battery_voltage: null
+  battery_current: null
+  battery_temperature: null
+  battery_daily_charge: null
+  battery_daily_discharge: null
+  load_power: null
+  load_daily_energy: null
+  load_power_factor: null
+  voltage_l1: null
+  voltage_l2: null
+  voltage_l3: null
+  current_l1: null
+  current_l2: null
+  current_l3: null
+  inverter_ac_temperature: null
+  inverter_dc_temperature: null
+  inverter_ambient_temperature: null
