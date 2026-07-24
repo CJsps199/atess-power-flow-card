@@ -8,8 +8,8 @@
 ###        - click on "Resources"
 ###        - click on "Add Resource" (bottom right)
 ###        - paste into URL: /local/atess-power-flow-card.js?v=1
-###                        ### ?v=n 
-###                        ### n = main javascript edition 
+##                        ?v=n 
+##                        n = main javascript edition 
 ###        - Resource Type: "JavaScript module"
 ###        - click save
 ###        - close and reopen HomeAssistant / web page
